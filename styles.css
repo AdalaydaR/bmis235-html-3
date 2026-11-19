@@ -23,12 +23,8 @@ nav {
     padding: 14px;
     text-align: center;
     border-radius: 12px;
-    transition: background-color o.2s ease;
 }
 
-nav:hover {
-   background-color: #dddddd;
-}
 /* every image inside the menu is forced to the same height.
    If your images still look different sizes, their WIDTHS are
    different: go back to Excel and make every cell the same size. */
@@ -43,6 +39,11 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover img {
+   opacity: 0.75;
+   transform: scale(1.05);
+   transition: 0.2s ease;
+}
 h1 {
     color: #f2f2f2;
     text-align: center;
